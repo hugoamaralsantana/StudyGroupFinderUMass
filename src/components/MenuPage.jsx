@@ -1,8 +1,11 @@
+import MenuCard from "./MenuCard"
 
 function MenuPage() {
     return(
-        <div>
-            MenuPage
+        <div className="container">
+            <div className="row">
+                <MenuCard></MenuCard>
+            </div>
         </div>
     );
 }
