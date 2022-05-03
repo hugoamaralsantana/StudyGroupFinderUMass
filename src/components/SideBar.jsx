@@ -5,7 +5,7 @@ function SideBar() {
     return(
         <ListGroup className="menu-group">
             <div className="profile-section">
-                <div className="image-container py-1">
+                <div className="image-container pt-2">
                     <img className = "w-75 h-50 rounded-circle" src={require('../images/picofme.jpg')} class="img-thumbnail" alt="Victor Santana"></img>
                     <h1 className="mt-1">Victor Santana</h1>
                 </div>
