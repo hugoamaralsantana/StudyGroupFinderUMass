@@ -1,28 +1,28 @@
-import MenuPage from './MenuPage';
+import SideBar from './SideBar';
 import StudyGroupListPage from './StudyGroupListPage';
-import NavBar from './NavBar'
 import { useState } from 'react';
-import styles from '../styles.scss'
+import '../styles.scss'
 
 function Container(){
-    const [currPage, setPage] = useState("studygrouplist");
-    console.log(currPage);
+    const [sidebar, setSidebar] = useState(false);
+
+    const toggleSidebar = () => {
+        if(!sidebar){
+            setSidebar(true);
+        }else{
+            setSidebar(false);
+        }
+    };
+    
     return(
     <div className="h-100 w-100 overflow-hidden d-flex position-absolute">
-        <div className="container-fluid bg-secondary p-0">
-            <div className="h-10 row">
-                
-            </div>
-            <div className="row">
-                    <div className="sidemenu col-4 bg-primary">
-
+        <div className="container-fluid bg-secondary">
+            <div className="h-100 row">
+                    <div className="col-2 bg-secondary m-0 p-0 ">
+                        <SideBar/>
                     </div>
-                <div className="col bg-danger">
-                    <button class="btn btn-warning menuCollapse" type="button" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu">
-                        Collapse Menu
-                    </button>
-
-                    {(currPage === "studygrouplist" ? <StudyGroupListPage/> : <MenuPage/>)}
+                <div className="col-10 bg-primary p-1">
+                    <StudyGroupListPage/>
                 </div>
             </div>
         </div>

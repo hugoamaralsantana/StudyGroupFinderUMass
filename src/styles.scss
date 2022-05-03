@@ -1,8 +1,55 @@
-.sidemenu {
-    max-width: 300px;
+.closedsidemenu {
+    min-width: 250px;
+    animation: close 0.5s linear 0.2s 1 normal forwards;
 }
 
-.menuCollapse{
-    height: 30%;
-    width: auto;
+.opensidemenu {
+    max-width: 250px;
+    animation: open 0.5s linear 0.2s 1 normal forwards;
+}
+
+.collapse-button {
+    position: relative;
+    height: 2.5rem;
+    width: 3rem;
+    left: 160px;
+    top: 10px;
+    z-index: 3;
+}
+
+.menu-item{
+    width: 100%;
+    height: 10vh;
+}
+
+.menu-group {
+    width: 100%;
+}
+
+.profile-section {
+    min-height: 50vh;
+}
+
+@keyframes open {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 125px;
+    }
+    100%{
+        left: 250px;
+    }
+}
+
+@keyframes close {
+    0%{
+        right: 250px;
+    }
+    50%{
+        right: 125px;
+    }
+    100%{
+        right: 0px;
+    }
 }
