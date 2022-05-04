@@ -30,13 +30,13 @@ function SideBar() {
                     <h1 className="mb-1">Victor Santana</h1>
                     <h6 className="mb-0">Major: Computer Science</h6>
                     <span className="star-group">
-                        {ratingStars.map((ratingStar) => {return (<i className={"rating-star " + ratingStar}></i>);})}
+                        {ratingStars.map((ratingStar, i) => {return (<i key={i} className={"rating-star " + ratingStar}></i>);})}
                     </span>
                     <h6 className="rating-text text-muted mb-1">Rating: 4.5/5</h6>
             </div>
         <ListGroup className="menu-group">
-            {menuButtons.map((menuButton) => {
-                return (<ListGroup.Item className="menu-item align-middle bg-secondary">{menuButton}</ListGroup.Item>);
+            {menuButtons.map((menuButton, i) => {
+                return (<ListGroup.Item key={i} className="menu-item align-middle bg-secondary">{menuButton}</ListGroup.Item>);
             })}
         </ListGroup>
         </div>
