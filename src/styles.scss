@@ -8,6 +8,21 @@
     animation: open 0.5s linear 0.2s 1 normal forwards;
 }
 
+.sidemenu{
+    min-width: 150px;
+    max-width: 250px;
+}
+
+.star-group{
+    position: relative;
+    bottom: 1rem;
+}
+
+.rating-star{
+    font-size: 1.5rem;
+    margin: 0.3rem;
+}
+
 .collapse-button {
     position: relative;
     height: 2.5rem;
@@ -20,6 +35,11 @@
 .menu-item{
     width: 100%;
     height: 10vh;
+}
+
+.menu-item:hover {
+    background-color: #5e1111 !important;
+    color: white !important;
 }
 
 .menu-group {

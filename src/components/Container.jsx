@@ -3,17 +3,7 @@ import StudyGroupListPage from './StudyGroupListPage';
 import { useState } from 'react';
 import '../styles.scss'
 
-function Container(){
-    const [sidebar, setSidebar] = useState(false);
-
-    const toggleSidebar = () => {
-        if(!sidebar){
-            setSidebar(true);
-        }else{
-            setSidebar(false);
-        }
-    };
-    
+function Container(){  
     return(
     <div className="h-100 w-100 overflow-hidden d-flex position-absolute">
         <div className="container-fluid bg-secondary">
