@@ -1,5 +1,5 @@
 .sidebar-container{
-    min-width: 200px;
+    min-width: 100px;
     max-width: 250px;
 }
 
@@ -8,8 +8,14 @@
     max-width: 250px;
 }
 
+.profile-pic{
+    min-width: 100px;
+    width: 10vw;
+    height: auto;
+}
+
 .rating-star{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0.3rem;
 }
 
@@ -23,18 +29,40 @@
 }
 
 .map-container {
-    height: 400px;
+    float:right;
+    height: 50%;
+    width: 50%;
+}
+
+.map-display {
+    height: 100%;
+    margin: 0;
+}
+
+.menu-group {
+    height: 100% !important;
 }
 
 .menu-item{
     width: 100%;
-    height: 30px;
-    font-size: 100%;
+    height: 6.8vh;
+    font-size: 1.2vw;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 .menu-item:hover {
     background-color: #5e1111 !important;
     color: white !important;
+}
+
+@keyframes rise {
+    0%{
+        bottom: 0px;
+    }
+    100%{
+        bottom: 500px;
+    }
 }
 
 .profile-section {

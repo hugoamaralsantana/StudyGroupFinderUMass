@@ -3,4 +3,13 @@ $secondary: #e1dedb;
 
 $spacer: 3rem;
 
+$border-width: 3px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 5px,
+  5: 8px
+);
+
 @import "~bootstrap/scss/bootstrap.scss";
