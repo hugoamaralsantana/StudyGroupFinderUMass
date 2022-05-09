@@ -15,6 +15,7 @@
 }
 
 .rating-star{
+    color: yellow;
     font-size: 1.3rem;
     margin: 0.3rem;
 }
@@ -44,28 +45,34 @@
 }
 
 .menu-item{
+    background-color: #5e1111 !important;
     width: 100%;
     height: 6.8vh;
-    font-size: 1.2vw;
+    font-size: 70%;
+    font-weight: bold;
     text-align: center;
     word-wrap: break-word;
 }
 
 .menu-item:hover {
-    background-color: #5e1111 !important;
-    color: white !important;
+    background-color: #e1dedb !important;
+    color: #5e1111 !important;
+    cursor: pointer;
+    animation: 0.1s ease-in 0s 1 normal forwards running rise;
 }
 
 @keyframes rise {
-    0%{
+    from{
         bottom: 0px;
     }
-    100%{
-        bottom: 500px;
+
+    to{
+        bottom: 5px;
     }
 }
 
 .profile-section {
+    min-height: 30vh;
     height: 100%;
 }
 

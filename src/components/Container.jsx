@@ -9,7 +9,7 @@ function Container(){
     <div className="h-100 w-100 d-flex position-absolute">
         <div className="container-fluid bg-primary">
             <div className="h-100 row">
-                <div className="col sidemenu bg-secondary m-0 p-0">
+                <div className="col sidemenu bg-primary m-0 p-0">
                     <SideBar/>
                 </div>
                 <div className="h-100 col bg-secondary p-2">
