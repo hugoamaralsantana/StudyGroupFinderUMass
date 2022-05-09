@@ -39,7 +39,6 @@ function Container() {
                 <Route path="find" element={<FindStudyGroup />} />
                 <Route path="join" element={<JoinStudyGroup />} />
                 <Route path="detail" element={<JoinDetail />} />
-                <Route path="logout" element={<SignIn />} />
                 </Route>
             </Routes>
 
