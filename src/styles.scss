@@ -8,6 +8,10 @@
     max-width: 250px;
 }
 
+.menu-link{
+    color: #e1dedb !important;
+}
+
 .profile-pic{
     min-width: 100px;
     width: 10vw;
@@ -54,7 +58,7 @@
     word-wrap: break-word;
 }
 
-.menu-item:hover {
+.menu-item:hover{
     background-color: #e1dedb !important;
     color: #5e1111 !important;
     cursor: pointer;
@@ -73,6 +77,7 @@
 
 .profile-section {
     min-height: 30vh;
+    max-height: 50vh;
     height: 100%;
 }
 

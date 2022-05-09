@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import "../studyGroup.scss"
-import { BrowserRouter, Route, Routes, Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const JoinDetail = () => {
@@ -66,4 +66,4 @@ const JoinDetail = () => {
     )
 }
 
-export default JoinDetail
+export default JoinDetail;

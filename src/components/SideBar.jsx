@@ -19,8 +19,6 @@ function SideBar() {
         }
     }
 
-    console.log(ratingStars)
-
     return (
         <div className="sidebar-container">
             <div className="profile-section px-2">
@@ -33,50 +31,39 @@ function SideBar() {
                         {ratingStars.map((ratingStar, i) => {return (<i key={i} className={"rating-star " + ratingStar}></i>);})}
                     </span>
                     <h6 className="rating-text mb-2 text-secondary">Rating: 4.5/5</h6>
-            <div className="profile-section">
-                <div className="image-container pt-2">
-                    <img className="rounded-circle w-75 h-50" src={require('../images/picofme.jpg')} class="img-thumbnail" alt="Victor Santana"></img>
-                </div>
-                <h1 className="mb-1">Victor Santana</h1>
-                <h6 className="mb-0">Major: Computer Science</h6>
-                <span className="star-group">
-                    {ratingStars.map((ratingStar) => { return (<i className={"rating-star " + ratingStar}></i>); })}
-                </span>
-                <h6 className="rating-text text-muted mb-1">Rating: 4.5/5</h6>
-            </div>
             </div>
 
             <ListGroup className="menu-group">
 
-                <ListGroup.Item className="menu-item bg-primary text-secondary">
-                    <Link to="/profile">
+            <Link to="/profile" className="menu-link text-decoration-none">
+                    <ListGroup.Item className="menu-item bg-primary text-secondary">
                         My Profile
-                    </Link>
-                </ListGroup.Item>
+                    </ListGroup.Item>
+                </Link>
 
-                <ListGroup.Item className="menu-item bg-primary text-secondary">
-                    <Link to="/">
+                <Link to="/" className="menu-link text-decoration-none">
+                    <ListGroup.Item className="menu-item bg-primary text-secondary">
                         Create a Study Group
-                    </Link>
-                </ListGroup.Item>
+                    </ListGroup.Item>
+                </Link>
 
-                <ListGroup.Item className="menu-item bg-primary text-secondary">
-                    <Link to="/join">
-                        Join A Study Group
-                    </Link>
-                </ListGroup.Item>
+                <Link to="/join" className="menu-link text-decoration-none">
+                    <ListGroup.Item className="menu-item bg-primary text-secondary">
+                        Join a Study Group
+                    </ListGroup.Item>
+                </Link>
 
-                <ListGroup.Item className="menu-item bg-primary text-secondary">
-                    <Link to="/find">
-                        Find Available Study Rooms
-                    </Link>
-                </ListGroup.Item>
+                <Link to="/find" className="menu-link text-decoration-none">
+                    <ListGroup.Item className="menu-item bg-primary text-secondary">
+                        Find a Study Group
+                    </ListGroup.Item>
+                </Link>
 
-                <ListGroup.Item className="menu-item bg-primary text-secondary">
-                    <Link to="/settings">
+                <Link to="/settings" className="menu-link text-decoration-none">
+                    <ListGroup.Item className="menu-item bg-primary text-secondary">
                         Settings
-                    </Link>
-                </ListGroup.Item>
+                    </ListGroup.Item>
+                </Link>
             </ListGroup>
         </div>
     );
