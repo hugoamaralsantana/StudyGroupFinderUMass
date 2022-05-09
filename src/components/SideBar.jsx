@@ -64,6 +64,12 @@ function SideBar() {
                         Settings
                     </ListGroup.Item>
                 </Link>
+
+                <Link to="/logout" className="menu-link text-decoration-none">
+                    <ListGroup.Item className="menu-item bg-primary text-secondary">
+                        Logout
+                    </ListGroup.Item>
+                </Link>
             </ListGroup>
         </div>
     );

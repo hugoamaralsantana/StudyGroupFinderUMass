@@ -1,5 +1,5 @@
 import SideBar from './SideBar';
-import FindStudyGroup from './FindStudyGroup';
+import FindStudyGroup from './FindStudyRoom';
 import JoinStudyGroup from './JoinStudyGroup';
 import CreateStudyGroup from './CreateStudyGroup';
 import { useState } from 'react'
@@ -39,6 +39,7 @@ function Container() {
                 <Route path="find" element={<FindStudyGroup />} />
                 <Route path="join" element={<JoinStudyGroup />} />
                 <Route path="detail" element={<JoinDetail />} />
+                <Route path="logout" element={<SignIn />} />
                 </Route>
             </Routes>
 
