@@ -7,9 +7,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoidnNhbnRhbmEyNyIsImEiOiJjbDJydXhjMmQzOHF4M2NzY
 function FindStudyGroup() {
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const lng = -72.5265;
+    const lng = -72.5257;
     const lat = 42.39;
-    const zoom = 14.5;
+    const zoom = 18;
 
     useEffect(() => {
         if (map.current) return; // initialize map only once

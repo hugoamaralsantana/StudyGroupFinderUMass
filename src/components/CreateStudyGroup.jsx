@@ -1,11 +1,9 @@
-import { useState, useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import '../styles.scss';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoidnNhbnRhbmEyNyIsImEiOiJjbDJydXhjMmQzOHF4M2NzYmdoMDhvdThzIn0.R1z752sYbHdCoCua5KmBOg';
 
 function CreateStudyGroup() {
-    const [currStep, setStep] = useState(1);
     var availDates = []
     var today = new Date();
     
@@ -16,7 +14,6 @@ function CreateStudyGroup() {
     return(
         <div className="px-3 py-2"> 
             <h1>Create a new Study Group</h1>
-            {(currStep === 1) ? (
                 <>
                     <div class="mb-1 mt-3 row">
                         <label class="col-sm-2 col-form-label">Group Name</label>
@@ -131,11 +128,8 @@ function CreateStudyGroup() {
                             </select>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary mt-3">Continue</button>
+                    <button type="button" class="btn btn-primary mt-3">Submit</button>
                 </>
-            ) : (
-                <div>Yo</div>
-            )}
         </div>
     );
 }
