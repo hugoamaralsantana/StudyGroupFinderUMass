@@ -65,6 +65,29 @@
     animation: 0.1s ease-in 0s 1 normal forwards running rise;
 }
 
+.card {
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.study-card {
+    height: 92%;
+    right: 5px;
+}
+
+.list-container {
+    overflow: scroll;
+    height: 70vh;
+}
+
+.results-container {
+    height: 70vh;
+}
+
 @keyframes rise {
     from{
         bottom: 0px;

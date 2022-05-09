@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import StudyGroupList from './StudyGroupList'
 
 function JoinStudyGroup(){
     const [major, setMajor] = useState('');
@@ -7,6 +8,8 @@ function JoinStudyGroup(){
     const [location, setLocation] = useState('');
 
     const [showResults, setShowResults] = useState(false);
+
+    const [currCard, setCard] = useState(0)
 
     const handleFilter = () => {
         if(major === '' || course === '' || material === '' || location === ''){
@@ -42,7 +45,7 @@ function JoinStudyGroup(){
                         </div>
                         <div class="col-sm-3">
                             <select class="form-select" aria-label="Select Course Material" onChange={e => setMaterial(e.target.value)}>
-                                <option selected>Select an Additional Tag</option>
+                                <option selected>Select a Course Material</option>
                                 <option value="midterm">Mid-term</option>
                                 <option value="final">Final</option>
                                 <option value="hw">Homework</option>
@@ -63,18 +66,17 @@ function JoinStudyGroup(){
                     </div>
 
                     <button type="button" class="btn btn-primary mt-3" onClick={() => {handleFilter()}}>Filter</button>
-                    
-                    <br/>
 
-            {showResults ? (
-                <div className="display-2">
-                    THESE ARE THE RESULTS
+            
+                <div className="container results-container mt-2 p-1 bg-primary">
+                    <div className="row">
+                    {showResults ? (
+                        <StudyGroupList/>
+                        ) : (
+                            <div className="display-5 mt-5 text-secondary">Results will display here once all filters are selected and applied</div>
+                        )}
+                    </div>
                 </div>
-            ) : (
-                <div className="display-2">
-                    Results will be displayed here once all filters are selected.
-                </div>
-            )}
         </>
     );
 }
