@@ -2,6 +2,9 @@ import SideBar from './SideBar';
 import FindStudyGroup from './FindStudyGroup';
 import JoinStudyGroup from './JoinStudyGroup';
 import CreateStudyGroup from './CreateStudyGroup';
+import Confirmation from './Confirmation';
+import Register from './Register';
+import Signin from './Signin'
 import { useState } from 'react'
 import '../styles.scss'
 import { BrowserRouter, Route, Routes, Link, Outlet } from 'react-router-dom';
@@ -39,6 +42,8 @@ function Container() {
                 <Route path="find" element={<FindStudyGroup />} />
                 <Route path="join" element={<JoinStudyGroup />} />
                 <Route path="detail" element={<JoinDetail />} />
+                <Route path="confirmation" element={<Confirmation />}/> 
+                <Route path = "signin" element={<Signin/>}/>
                 </Route>
             </Routes>
 
