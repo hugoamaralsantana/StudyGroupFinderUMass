@@ -1,5 +1,6 @@
 import mapboxgl from 'mapbox-gl';
 import '../styles.scss';
+import { Link } from 'react-router-dom';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoidnNhbnRhbmEyNyIsImEiOiJjbDJydXhjMmQzOHF4M2NzYmdoMDhvdThzIn0.R1z752sYbHdCoCua5KmBOg';
 
@@ -128,7 +129,7 @@ function CreateStudyGroup() {
                             </select>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary mt-3">Submit</button>
+                    <Link to={"/find"}> <button type="button" class="btn btn-primary mt-3">Submit</button> </Link>
                 </>
         </div>
     );

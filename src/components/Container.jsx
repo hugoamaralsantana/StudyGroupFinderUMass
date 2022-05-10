@@ -9,6 +9,10 @@ import { useState } from 'react'
 import '../styles.scss'
 import { BrowserRouter, Route, Routes, Link, Outlet } from 'react-router-dom';
 import JoinDetail from './JoinDetail';
+import DetailCheck from './DetailCheck'
+import ProfileCreated from './ProfileCreated';
+import Profile from './Profile'
+import CreatedStudyGroup from './CreatedStudyGroup';
 
 const TempPage = () => {
     return (
@@ -42,8 +46,14 @@ function Container() {
                 <Route path="find" element={<FindStudyGroup />} />
                 <Route path="join" element={<JoinStudyGroup />} />
                 <Route path="detail" element={<JoinDetail />} />
-                <Route path="confirmation" element={<Confirmation />}/> 
-                <Route path = "signin" element={<Signin/>}/>
+                <Route path="Confirmation" element={<Confirmation />}/> 
+                <Route path ="signin" element={<Signin/>}/>
+                <Route path="detailcheck" element={<DetailCheck />} />
+                <Route path="profile" element={<Profile />} />
+                <Route path="profileCreated" element={<ProfileCreated />} />
+                <Route path="created" element={<CreatedStudyGroup />} />
+
+
                 </Route>
             </Routes>
 

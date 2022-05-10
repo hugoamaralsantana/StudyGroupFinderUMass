@@ -1,0 +1,35 @@
+
+.study-group-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 20%;
+    height: 50%;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    margin-left: 5%;
+    padding: 2%;
+    text-decoration: none;
+    margin-bottom: 10%;
+}
+
+.prof-header{
+    font-size: 40px;
+    display: flex;
+    margin-left: 5%;
+}
+
+.title{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100px;
+    margin-bottom: 5%;
+}
+
+.tag-sep{
+    margin-bottom: 3%;
+}
+
+a{
+    text-decoration: none;
+}
